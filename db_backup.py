@@ -28,16 +28,16 @@ def restore_database():
         logging.error(f"An error occurred while restoring the database: {e}")
 
 def main():
-    logging.info("1. Backup Database")
-    logging.info("2. Restore Database")
-    logging.info("3. Exit")
+    print("1. Backup Database")
+    print("2. Restore Database")
+    print("3. Exit")
     choice = input("Enter your choice (1, 2, or 3): ")
     if choice == "1":
         backup_database()
     elif choice == "2":
         restore_database()
     elif choice == "3":
-        logging.info("Exiting...")
+        print("Exiting...")
     else:
         logging.warning("Invalid choice. Please select 1 or 2.")
         
